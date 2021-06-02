@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <!-- meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/logo3.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/alterarV.css">
+
+    <title>Registo</title>
+</head>
+
+<body class="grid-container-register" id="background-alterar">   
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.php"><img src="../Site/img/logo3.png" width="40" style="margin-right: 5px;" alt="Logo VoluntárioCOVID19"> VoluntárioCOVID19</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="acoesI.php">Ações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="candidatos_a_acao.php">Voluntários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alterarI.php">A minha instituição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aceitar_candidaturas.php">Aceitar candidaturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Criar ações</a>
+                    </li>
+                </ul>
+                <form action = "../php/logout.php" method = "post">
+                        <input type="submit" name="Logout"
+                            class="btn btn-login" value="Logout"> 
+                        </form>
+            </div>
+        </div>
+    </nav>
+    <main class="form-register">
+        <img class=" logo_register" src="img/logo5.png" alt="Logo VoluntárioCOVID19"  width="170">
+        <div class="mx-5 px-4 py-4 editar-perfil-background mt-4">
+
+            <form action="../php/criar_acao.php" method="post" >
+                <div class="alterar-perfil-div-inicial">
+                        <div class="row ">
+
+                            <div class="col-sm-12">
+                                <label for="nome_ação" class="form-label">Designação da ação</label>
+                                <input type="text" name="nome_ação" class="form-control mb-3" placeholder="Ação">
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm">
+                                <label for="distrito_ação" class="form-label">Distrito da ação</label>
+                                <input name="distrito_ação" class="form-control mb-3" list="datalistDistrito" placeholder="Distrito">
+
+                            </div>
+
+                            <div class="col-sm">
+                                
+                                <label for="freguesia_ação" class="form-label">Freguesia da ação</label>
+                                <input name="freguesia_ação" class="form-control mb-3" list="datalistFreguesia" placeholder="Freguesia" >
+                            
+                            </div>
+                            <div class="col-sm">
+                                <label for="concelho_ação" class="form-label">Concelho da ação</label>
+                                <input name="concelho_ação" class="form-control mb-3" list="datalistConcelho" placeholder="Concelho">
+                                
+                            </div>
+
+                        </div>
+                
+                
+
+                        <div class="row mb-3">
+                            <div class="col-sm">
+                                <label class = "form-label" for="descricao_ação">Descrição e função da ação</label>
+                                <textarea class="form-control" name="descricao_ação" aria-label="With textarea" rows="2" placeholder=""></textarea>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <label for="disponibilidade" class="form-label">Disponibilidade</label>
+                            <table class="table table-sm table-dark text-center border" >
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Dias</th>
+                                        <th colspan="3">Período</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Manhã</td>
+                                        <td>Tarde</td>
+                                        <td>Noite</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Segunda-feira <input type="checkbox" name="segunda_feira" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name ="segunda_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="segunda_tarde" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="segunda_noite" class="form-check-input" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Terça-feira <input type="checkbox" name="terca_feira" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="terca_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="terca_tarde"  class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="terca_noite" class="form-check-input" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quarta-feira <input type="checkbox" name="quarta_feira" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="quarta_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="quarta_tarde" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="quarta_noite" class="form-check-input" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinta-feira <input type="checkbox" name="quinta_feira" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="quinta_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="quinta_tarde" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="quinta_noite" class="form-check-input" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sexta-feira <input type="checkbox" name="sexta_feira" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="sexta_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="sexta_tarde" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="sexta_noite" class="form-check-input" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sábado <input type="checkbox" name="sabado_feira" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="sabado_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="sabado_tarde" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="sabado_noite" class="form-check-input" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Domingo <input type="checkbox" name="domingo_feira" class="form-check-input"></td>
+                                        <td><input type="checkbox" name="domingo_manha" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="domingo_tarde" class="form-check-input" ></td>
+                                        <td><input type="checkbox" name="domingo_noite" class="form-check-input" ></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-sm">
+                                label for="populacao_alvo" class="form-label">População Alvo</label>
+                                <select class="form-select" name="populacao_alvo" aria-label="Default select example">
+                                    <option selected>Escolha a populção alvo</option>
+                                    <option value="Crianças">Crianças</option>
+                                    <option value="Jovens">Jovens</option>
+                                    <option value="Adultos">Adultos</option>
+                                    <option value="Idosos">Idosos</option>
+                                    <option value="Família">Família</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col">
+                                <label for="num_vagas" class="form-label">Número de vagas da ação</label>
+                                <input name="num_vagas" type="text" class="form-control mb-3" placeholder="Vagas">
+                            </div>
+
+                        
+                        </div>
+
+
+                    <div class="row mb-3">
+                        <label for="area_interesse" class="form-label">Área de interesse</label>
+                        <select class="form-select" name="area_interesse" aria-label="Default select example">
+                            <option selected>Escolha a área de interesse</option>
+                            <option value="Artes e Entretenimento">Artes e Entretenimento</option>
+                            <option value="Atividade Política">Atividade Política</option>
+                            <option value="Ação Social">Ação Social</option>
+                            <option value="Comunicação e Publicidade">Comunicação e Publicidade</option>
+                            <option value="Educação">Educação</option>
+                            <option value="Inovação e Tecnologias">Inovação e Tecnologias</option>
+                            <option value="Meio Ambiente e Energias">Meio Ambiente e Energias</option>
+                            <option value="Moda e Beleza">Moda e Beleza</option>
+                            <option value="Saúde e Bem-estar">Saúde e Bem-estar</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                    <div class="col-sm-4 mx-auto">
+                        <button class="w-100 btn btn-lg btn-inst" id="confirmar-alterar-btn" type="submit" >Criar ação</button>
+                    </div>
+            </form>
+        </div>                        
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Plataforma</h5>
+                    <p>A plataforma VoluntárioCOVID19 permite às instituições registadas encontrar 
+                        e recrutar voluntários para os seus projetos e necessidades de voluntariado.</p>
+                </div>
+
+        
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Comunidade</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;"> Voluntário</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;"> Instituições</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;"> Ações</a>
+                </p>         
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Conta</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;"> A minha conta</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;"> Ajuda</a>
+                </p>         
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactos</h5>
+                <p>
+                    <i class="fas fa-home mr-3"> </i>  Lisboa, Faculdade de Ciências
+                </p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i>  voluntariocovid19@gmail.com
+                </p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i>  219364726
+                </p>
+            </div>    
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <img src="../Site/img/logo3.png" width="190" alt="">
+            </div>    
+            
+        </div>
+
+    </footer>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/alterar.js"></script>
+
+</body>
+</html>

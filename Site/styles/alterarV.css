@@ -1,0 +1,112 @@
+.editar-perfil-background {
+    background-color: rgba(155, 155, 155, 0.507);
+    border-radius: 15px;
+}
+
+.editar-areas-background {
+    background-color: rgba(155, 155, 155, 0.507);
+    border-radius: 15px;
+}
+
+.editar-password-background {
+    background-color: rgba(155, 155, 155, 0.507);
+    border-radius: 15px;
+    margin-right: 12px;
+    margin-left: 26px;
+}
+
+.editar-email-background {
+    background-color: rgba(155, 155, 155, 0.507);
+    border-radius: 15px;
+    margin-left: 12px;
+}
+
+#background-alterar {
+    background: linear-gradient(0deg, #00000088 40%, #ffffff44 100%), url(../img/voluntariado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.alterar-password-div-final {
+    display: none;
+}
+
+.alterar-email-div-final {
+    display: none;
+}
+
+.alterar-areas-div-final {
+    display: none;
+}
+
+.alterar-perfil-div-final {
+    display: none;
+}
+
+#cancelar-alterar-btn {
+    background-color: #963535;
+    border-color: #963535;
+}
+
+#confirmar-alterar-btn {
+    background-color: #369636;
+    border-color: #369636;
+}
+
+#segunda {
+    margin-left: 2px;
+}
+
+#terca {
+    margin-left: 20px;
+}
+
+#quarta {
+    margin-left: 8px;
+}
+
+#quinta {
+    margin-left: 11px;
+}
+
+#sexta {
+    margin-left: 20px;
+}
+
+#sabado {
+    margin-left: 42px;
+}
+
+#domingo {
+    margin-left: 28px;
+}
+
+.check {
+    margin-left: 30px;
+}
+
+.check1 {
+    margin-left: 52px;
+}
+
+.check2 {
+    margin-left: 30px;
+}
+
+.check3 {
+    margin-left: 80px;
+}
+
+.check4 {
+    margin-left: 39px;
+}
+
+.check5 {
+    margin-left: 47px;
+}
+
+.btn-inst {
+    color: #FFFF;
+    background-color: #A97CB5 !important;
+    border-color: #A97CB5 !important;
+}

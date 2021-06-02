@@ -1,0 +1,103 @@
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+#fundo {
+    background: linear-gradient(0deg, #00000088 40%, #ffffff44 100%), url(../img/solidariedade.jpg);
+    background-size: cover;
+  }
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.btn-recv {
+    color: #FFFF;
+    background-color: #A97CB5;
+    border-color: #A97CB5;
+    align-self: flex-end;
+}
+
+.btn-env {
+    color: #FFFF;
+    background-color: #1E9DC6;
+    border-color: #1E9DC6;
+}
+
+
+.btn-login {
+    color: #000;
+    background-color: #E1EEF7;
+    border-color: #E1EEF7;
+}
+
+.capsula {
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding: 7px;
+    display: inline-block;
+}
+
+#receiver {
+    left: 44%;
+    position: relative;
+    margin-top: 80px;
+}
+
+#chat {
+    width: 30%;
+    right: 35%;
+    left: 35%;
+    position: relative;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    background-color: rgba(175, 175, 175, 0.863);
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.central {
+    width: 50%;
+    left: 9%;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+#background-alterar {
+    background: linear-gradient(0deg, #00000088 40%, #ffffff44 100%), url(../img/voluntariado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.popup {
+    position: fixed;
+    background-color: rgb(121, 121, 121);
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    text-align: center;
+    right: 40%;
+    top: 56%;
+    border-radius: 11px;
+    padding-top: 10px;
+    font-size: x-large;
+    color: white;
+}
+
+#btn-ok {
+    width: 53%;
+}

@@ -1,0 +1,50 @@
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+#fundo_admin_a {
+    background: linear-gradient(0deg, #00000088 40%, #ffffff44 100%), url(../Site/img/solidariedade.jpg);
+    background-size: cover;
+}
+
+#fundo_admin_v {
+    background: linear-gradient(0deg, #00000088 40%, #ffffff44 100%), url(../Site/img/voluntariado1.jpg);
+    background-size: cover;
+}
+
+#fundo_admin_i {
+    background: linear-gradient(0deg, #00000088 40%, #ffffff44 100%), url(../Site/img/instituicoes.jpg);
+    background-size: cover;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.btn-register {
+    color: #FFFF;
+    background-color: #1E9DC6;
+    border-color: #1E9DC6;
+}
+  
+  
+.btn-login {
+    color: #000;
+    background-color: #E1EEF7;
+    border-color: #E1EEF7;
+}
+  
+.text-warning {
+    color: #1E9DC6!important;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
